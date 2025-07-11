@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Circle - Week 1: The Fire of Foundations</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: BlinkMacSystemFont, sans-serif;
+        background-color: #ffffff;
+        color: #0f172a;
+        line-height: 1.6;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .header {
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 2rem;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+      }
+
+      .header p {
+        color: #64748b;
+        font-size: 1rem;
+      }
+
+      .files-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .file-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        background-color: #ffffff;
+        transition: all 0.2s ease;
+      }
+
+      .file-card:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .file-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+      }
+
+      .file-name {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #0f172a;
+      }
+
+      .file-type {
+        background-color: #f1f5f9;
+        padding: 5px;
+        border-radius: 4px;
+        font-weight: 500;
+        display: flex;
+      }
+
+      .file-data {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.75rem;
+        font-size: 0.875rem;
+        color: #64748b;
+      }
+
+      .data-item {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .file-description {
+        color: #475569;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 1rem;
+        }
+
+        .header h1 {
+          font-size: 1.5rem;
+        }
+
+        .file-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+
+        .file-data {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+      .file-card[data-type='python'] .file-type {
+        background-color: #fef3c7;
+        color: #92400e;
+      }
+
+      .file-card[data-type='markdown'] .file-type {
+        background-color: #dbeafe;
+        color: #1e40af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Week 1: The Fire of Foundations</h1>
+        <p>Building the fundamentals</p>
+      </div>
+
+      <div class="files-list">
+        <a
+          href="https://github.com/hariprasadd0/Tasks/blob/main/Week%201%20-%20The%20Fire%20of%20Foundations/calculator.py"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="file-card"
+            data-type="python"
+          >
+            <div class="file-header">
+              <div class="file-name">calculator</div>
+              <div class="file-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-python"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                  <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                  <path
+                    d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4"
+                  />
+                  <path d="M11 6l0 .01" />
+                  <path d="M13 18l0 .01" />
+                </svg>
+              </div>
+            </div>
+            <div class="file-data">
+              <div class="data-item">
+                📅
+                <span>July 8, 2025</span>
+              </div>
+              <div class="=data-item">
+                <span>📊</span>
+                <span>1.4 KB</span>
+              </div>
+            </div>
+            <div class="file-description">A basic CLI calculator.</div>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/hariprasadd0/Tasks/blob/main/Week%201%20-%20The%20Fire%20of%20Foundations/cheatsheet.md"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="file-card"
+            data-type="markdown"
+          >
+            <div class="file-header">
+              <div class="file-name">cheatsheet</div>
+              <div class="file-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-markdown"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+                  />
+                  <path d="M7 15v-6l2 2l2 -2v6" />
+                  <path d="M14 13l2 2l2 -2m-2 2v-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="file-data">
+              <div class="data-item">
+                <span> 📅 </span>
+                <span>June 18, 2025</span>
+              </div>
+              <div class="data-item">
+                <span>📊</span>
+                <span>1.3 KB</span>
+              </div>
+            </div>
+            <div class="file-description">
+              cheatsheet summarizing basic Linux commands.
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/hariprasadd0/Tasks/blob/main/Week%201%20-%20The%20Fire%20of%20Foundations/nginx.md"
+          style="text-decoration: none; color: inherit"
+        >
+          <div
+            class="file-card"
+            data-type="markdown"
+          >
+            <div class="file-header">
+              <div class="file-name">nginx</div>
+              <div class="file-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-markdown"
+                >
+                  <path
+                    stroke="none"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+                  />
+                  <path d="M7 15v-6l2 2l2 -2v6" />
+                  <path d="M14 13l2 2l2 -2m-2 2v-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="file-data">
+              <div class="data-item">
+                <span>📅</span>
+                <span>June 24, 2025</span>
+              </div>
+              <div class="data-item">
+                <span>📊</span>
+                <span>3.3 KB</span>
+              </div>
+            </div>
+            <div class="file-description">
+              Basic Nginx configuration for web servers.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
